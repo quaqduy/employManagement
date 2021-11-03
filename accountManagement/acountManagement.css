@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ----------------------header-------------------------- */
+
+#header {
+    background: #44a87d;
+    padding: 8px 0;
+}
+
+#header h1 {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#header .header__rightBox {
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#header .header__marginRight {
+    margin-right: 10px;
+}
+
+#header .header__marginLeft {
+    margin-left: 3px;
+}
+
+.logoutBoxChoice {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.logoutBoxChoice:hover {
+    cursor: pointer;
+}
+
+.logoutBoxChoice:hover .logoutItem {
+    display: block;
+}
+
+.logoutItem {
+    background: white;
+    color: black;
+    position: absolute;
+    top: 32px;
+    right: 0;
+    padding: 8px;
+    list-style-type: none;
+    box-shadow: 0px 0px 3px gray;
+    display: none;
+}
+
+.logoutItem>li:hover {
+    text-decoration: underline;
+}
+
+.logoutItem>li {
+    position: relative;
+}
+
+.shape1 {
+    position: absolute;
+    border-style: solid;
+    border-width: 20px 15px;
+    border-color: transparent transparent white transparent;
+    top: -41px;
+    right: 0;
+}
+
+.shape2 {
+    position: absolute;
+    border-style: solid;
+    border-width: 20px 50px;
+    left: -12px;
+    top: -24px;
+    border-color: transparent transparent transparent transparent;
+}
+
+
+/* --------------------container--------------------- */
+
+#container {
+    margin-top: 20px;
+}
+
+.container__headerBox {
+    background: rgba(128, 128, 128, 0.123);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 8px;
+}
+
+.addItemOption {
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addItemOption:hover {
+    cursor: pointer;
+}
+
+.listView-employees {
+    margin-top: 10px;
+    height: 800px;
+    background-color: rgb(247, 247, 244);
+    overflow: scroll;
+}
+
+.item-layout {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding: 8px 5px;
+    width: 1090px;
+}
+
+.flex2 {
+    flex: 2;
+    text-align: left;
+}
+
+.flex1 {
+    flex: 1;
+    text-align: left;
+}
+
+.toolsField {
+    display: flex;
+    justify-content: space-around;
+}
+
+.toolsField>svg:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+
+/* ----------------------View Information box---------------------- */
+
+.transparentBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(128, 128, 128, 0.678);
+    z-index: 3;
+}
+
+#viewInfor .viewInforBox {
+    background: white;
+    z-index: 4;
+    padding: 10px;
+    width: 70%;
+    margin: auto;
+    margin-top: 200px;
+    box-shadow: 0px 0px 8px greenyellow;
+    position: relative;
+}
+
+#viewInfor .viewInforBox__title {
+    text-align: center;
+    width: 100%;
+}
+
+#viewInfor .row {
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+
+#viewInfor .border-none {
+    border: none !important;
+}
+
+.viewInfor__close {
+    color: red;
+    position: absolute;
+    right: 10px;
+    color: black;
+    box-shadow: 0px 0px 3px;
+    padding: 5px;
+}
+
+.viewInfor__close:hover {
+    background: rgba(128, 128, 128, 0.233);
+}
+
+
+/* ------------------------editInfor------------------------------ */
+
+#addItem {
+    background: white;
+    width: 40%;
+    padding: 15px;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 0px 0px 8px greenyellow;
+    position: relative;
+}
+
+#addItem h1 {
+    text-align: center;
+}
+
+#addItem button {
+    width: 150px;
+    padding: 5px;
+}
+
+#addItem button:hover {
+    background: rgba(128, 128, 128, 0.596);
+    color: white;
+}
+
+#addItem .viewInfor__close {
+    position: absolute;
+}
+
+
+/* ---------------------takeAgree-------------------------- */
+
+.takeAgreeBox {
+    background: white;
+    width: 30%;
+    text-align: center;
+    margin: auto;
+    margin-top: 350px;
+    padding: 10px;
+}
+
+.takeAgreeBox__answer {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.takeAgreeBox__answer button {
+    padding: 5px 20px;
+    margin: 10px;
+}
+
+.takeAgreeBox__answer button:hover {
+    background: rgba(128, 128, 128, 0.514);
+    color: white;
+}

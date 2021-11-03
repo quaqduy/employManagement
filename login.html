@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./loginForm/login.css">
+</head>
+
+<body>
+    <div class="beginScreen">
+        <div class="backgroundOpacity">
+            <div class="narvigationToForm">
+                <h1 class='text-uppercase'>Are you a manager or an employee?</h1>
+                <div class="narvigationToForm__btn-box">
+                    <div class="btnBeginChoosing managerLogin">Manager Login</div>
+                    <div class="btnBeginChoosing employeeLogin">Employee Login</div>
+                </div>
+            </div>
+            <div class="login d-none">
+                <div class="closeBtn">
+                    <button type="button" class="close" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                </div>
+                <form method="get" action='./acountManagement.html' id='FormLogin'>
+                    <h1 class='text-uppercase '>aa</h1>
+                    <div class="form-group">
+                        <label for="userName">User name</label>
+                        <input type="text" class="form-control" id="userName" placeholder="Enter your user name">
+                        <div class="errorMessage d-none"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Pass">Password</label>
+                        <input type="password" class="form-control" id="Pass" placeholder="Enter your password">
+                        <div class="errorMessage d-none"></div>
+                    </div>
+
+                    <button type="submit" onclick="formValidation('#FormLogin ')" class="btn">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src='./loginForm/login.js '></script>
+<script src='./loginForm/formValidation.js '>
+</script>
+
+</html>
